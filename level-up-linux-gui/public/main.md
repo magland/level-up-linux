@@ -10,7 +10,7 @@ Prerequisites:
 
 ## Challenge A762: Create a text file
 
-For some background, ask ChatGPT some basics about files
+For some background, ask [ChatGPT](https://chat.openai.com/) some basics about files
 - I'm new to Linux. Explain what a text file is.
 - I'm new to Linux. Explain how I can create a new file from the terminal.
 
