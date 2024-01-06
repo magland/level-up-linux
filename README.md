@@ -60,7 +60,7 @@ cat first.txt
 ## Challenge A285: Create a directory
 
 For some background, ask ChatGPT some basics about directories
-- I'm new to Linux. Explain what a directory is.
+- I'm new to Linux am 7 years old. Explain what a directory is.
 - I'm new to Linux. Explain how I can create a new directory from the terminal.
 
 **NOW THE CHALLENGE**: Create a directory named mydir and create a file named second.txt inside of it. The file should contain the text "Good evening!" (Hint: you can use the mkdir command to create a directory, and you can use the echo command to create a file with the text "Good evening!" in it. You'll need to consult with ChatGPT on how to get that file inside the new directory.)
@@ -88,7 +88,7 @@ Often, you'll need to download a file from the internet and unpack it. While you
 Prerequisites: ask the internet how you would get curl installed on your system (if it's not already installed)
 
 For some background, ask ChatGPT some basics about gzipped tarballs
-- I'm new to Linux. Explain what a gzipped tarball is.
+- I'm new to Linux and 4 years old. Explain what a gzipped tarball is.
 - I'm new to Linux. Explain how I can download a file from the terminal using curl.
 - I'm new to Linux. Explain how I can unpack/extract a gzipped tarball from the terminal.
 
@@ -147,7 +147,7 @@ To redeem your level-up-linux token, submit your answer to [level-up-linux](http
 ## Challenge A635: Environment variables
 
 For some background, ask ChatGPT some basics about environment variables
-- I'm new to Linux. Explain environment variables and why they are useful.
+- I'm new to Linux and 9 years old. Explain environment variables and why they are useful.
 - I'm new to Linux. Explain how I can set an environment variable from the terminal.
 - I'm new to Linux. Explain about using the "export" command to set an environment variable.
 
