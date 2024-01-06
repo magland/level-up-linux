@@ -1,6 +1,6 @@
 # Level-up Linux!
 
-![image](https://github.com/magland/level-up-linux/assets/3679296/c3ed6361-d5b3-44a9-813e-41396804735b)
+<img src="https://github.com/magland/level-up-linux/assets/3679296/c3ed6361-d5b3-44a9-813e-41396804735b" width="400px" />
 
 Welcome to level-up linux where you can learn crucial Linux skills by solving challenges and collecting tokens.
 
