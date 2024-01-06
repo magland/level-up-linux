@@ -14,9 +14,10 @@ type Props ={
 	source: string
 	onLinkClick?: (href: string) => void
 	redeemedChallengeIds: string[];
+	imgWidth: number;
 }
 
-const Markdown: FunctionComponent<Props> = ({source, onLinkClick, redeemedChallengeIds}) => {
+const Markdown: FunctionComponent<Props> = ({source, onLinkClick, redeemedChallengeIds, imgWidth}) => {
 	const a = useCallback(
 		({/*node,*/ children, href, ...props}: any) => {
 			if ((href) && (href.startsWith('#')) && (onLinkClick)) {
@@ -35,7 +36,7 @@ const Markdown: FunctionComponent<Props> = ({source, onLinkClick, redeemedChalle
 	, [onLinkClick, redeemedChallengeIds])
 	const img = useCallback(
 		({...props}: any) => {
-			return <img {...props} width="350px" />
+			return <img {...props} width={`${imgWidth}px`} />
 		}
 	, [])
 	const components: Partial<Omit<NormalComponents, keyof SpecialComponents> & SpecialComponents> = useMemo(() => (

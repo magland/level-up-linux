@@ -65,13 +65,14 @@ export const MainWindow: FunctionComponent<MainWindowProps> = ({
     })();
   }, [llState.tokensRedeemed]);
 
-  const W = Math.min(width - 50, 800);
-  const L = (width - W) / 2;
+  const W = Math.min(width - 100, 800);
+  const padding = 20;
+  const L = (width - W) / 2 - padding;
   const T = 50;
   const bg1 = "#f0f0ff";
   const bg2 = "#ffffff";
   return (
-    <div style={{ position: "absolute", width, height, overflowY: "auto", backgroundColor: bg1 }}>
+    <div style={{ position: "absolute", width, height, overflowY: "auto", backgroundColor: bg1, overflowX: 'hidden' }}>
       <div
         style={{ position: "absolute", left: 0, top: 20, width, height: T, textAlign: "center", color: 'green' }}
       >
@@ -83,13 +84,14 @@ export const MainWindow: FunctionComponent<MainWindowProps> = ({
           width: W,
           left: L,
           top: T,
-          padding: 20,
-          backgroundColor: bg2
+          padding,
+          backgroundColor: bg2,
+          overflowX: 'hidden'
         }}
       >
         <Markdown
           source={mainMd}
-          onLinkClick={(href) => {
+          onLinkClick={(href: string) => {
             if (href.startsWith("#submit-")) {
               const challengeId = href.slice("#submit-".length);
               handleSubmitToken(challengeId);
@@ -98,6 +100,7 @@ export const MainWindow: FunctionComponent<MainWindowProps> = ({
             }
           }}
           redeemedChallengeIds={redeemedChallengeIds}
+          imgWidth={Math.min(W - 50, 350)}
         />
       </div>
     </div>
